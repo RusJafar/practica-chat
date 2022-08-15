@@ -2,9 +2,10 @@
   "name": "practica-chat",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.tmpl.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/RusJafar/practica-chat/issues"
   },
-  "homepage": "https://github.com/RusJafar/practica-chat#readme"
+  "homepage": "https://github.com/RusJafar/practica-chat#readme",
+  "devDependencies": {
+    "handlebars": "^4.7.7",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars": "^0.4.4"
+  }
 }
