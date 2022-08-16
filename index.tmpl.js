@@ -1,5 +1,3 @@
-
 export default `
-<p>{{content}}</p>
-{{> button label="Click" }}
+<h1>{{content}}</h1>
 `

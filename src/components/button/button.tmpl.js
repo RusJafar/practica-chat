@@ -1,3 +1,3 @@
 export default `
-    <button>{{label}}</button>
+    <button class="color-red">{{label}}</button>
 `

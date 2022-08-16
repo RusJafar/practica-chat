@@ -1,5 +1,6 @@
 {
     "hbs": {
         "instanceName": "Handlebars2"
-    }
+    },
+    "transformers": [".scss": @parcel/transformer-scss]
 }
