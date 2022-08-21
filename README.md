@@ -24,6 +24,7 @@ https://shiny-baklava-9111fa.netlify.app/
 
 __Запуск__
 - Утановка `npm i`
-- Запуск в режиме дев `parcel src/static/index.html --open --no-cache`
-- Запуск сборки `parcel build src/static/index.html --no-source-maps --no-cache`
+- Запуск `npm run start`
+- Запуск в режиме дев `npm run dev`
+- Запуск сборки `npm run build`
 
