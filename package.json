@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "parcel src/pages/index.html --open --no-cache",
-    "build": "parcel build src/pages/index.html --no-source-maps --no-cache"
+    "dev": "parcel src/static/index.html --open --no-cache",
+    "build": "parcel build src/static/index.html --no-source-maps --no-cache"
   },
   "parcelCleanPaths": [
     "dist",
