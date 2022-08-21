@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node ./server.js --http --open",
+    "start": "node ./server.js --http",
     "dev": "parcel src/static/index.html --open --no-cache",
     "build": "parcel build src/static/index.html --no-source-maps --no-cache"
   },

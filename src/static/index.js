@@ -1,18 +1,7 @@
 import Handlebars from 'handlebars';
-import template from './index.tmpl';
 import "../components";
-import '../helpers'
-import {chats} from '../mockData/chatsList'
-
-const pageList = [
-    {title: "Авторизация", link: "/src/pages/login.html"},
-    {title: "Регистрация", link: "/src/pages/registration.html"},
-    {title: "Список чатов", link: "/src/pages/chats.html"},
-    {title: "Чат", link: "/src/pages/single-chat.html"},
-    {title: "Профиль", link: "/src/pages/profile.html"},
-    {title: "Страница 500", link: "/src/pages/500.html"},
-    {title: "Страница 404", link: "/src/pages/404.html"},
-]
+import '../helpers';
+import {chats} from '../mockData/chatsList';
 
 if (window.location.href.includes('login')) {
     console.log('Login')
@@ -66,12 +55,6 @@ if (pageHref.includes('chats') || pageHref.includes('single-chat')) {
         document.getElementById('messageInput').innerHTML = compileMessageInput({singleChatData});
     });
 }
-
-// if(window.location.href.includes('single-chat')) {
-//     console.log('single-chat');
-//     const compile = Handlebars.compile(chatsTemplate);
-//     document.getElementById('chatList').innerHTML = compile({chats});
-// }
 
 
 
