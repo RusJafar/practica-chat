@@ -395,5 +395,4 @@ export const chats = [
             "content": "this is message content"
         }
     }
-
-]
+];
