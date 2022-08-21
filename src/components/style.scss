@@ -1,10 +1,26 @@
-@import "button/button.scss";
+@import 'button/button.scss';
+@import 'messageListItem/messaheListItem.scss';
+@import 'singleChatMessageItem/singleChatMessageItem.scss';
+@import 'singleChatHeader/singleChatHeader.scss';
+@import 'singleChatMessageInput/singleChatMessageInput.scss';
 
-$green-color: #355843;
+$main-color: #355843;
+$soft-green: #bbcfc3;
+$main-font-color: #7e7e7e;
+$express-font-color: #3a3a3a;
 
 body {
   margin: auto;
   font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+}
+
+body {
+  color: $main-font-color;
 }
 
 p, a {
@@ -18,7 +34,14 @@ p, a {
 }
 
 .background_green {
-  background: $green-color;
+  background: $main-color;
+}
+
+.w_100 {
+  width: 100%;
+}
+.h_100 {
+  height: 100%;
 }
 
 //Flex
@@ -30,6 +53,14 @@ p, a {
   justify-content: space-between;
 }
 
+.justify_space_around {
+  justify-content: space-around;
+}
+
+.align_space_around {
+  align-content: space-around;
+}
+
 .align_items_center {
   align-items: center;
 }
@@ -38,11 +69,31 @@ p, a {
   flex-direction: column;
 }
 
+.direction_row {
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align_fixed_end {
+  align-items: flex-end;
+}
+.justify_content_end {
+  justify-content: flex-end;
+}
+//--Flex
+
+.mt-2 {
+  margin-top: 2em;
+}
+
 
 //Login form
 .modal {
   width: 476px;
-  height: 495px;
+  height: auto;
   margin: auto;
   background: #FFFFFF;
   border-radius: 5px;
@@ -54,7 +105,7 @@ p, a {
 
 .login-form__inputs {
   width: inherit;
-  height: 226px;
+  //height: 226px;
 
   .login-form__input {
     width: 80%;
@@ -72,8 +123,6 @@ p, a {
   color: #2B2929;
 }
 
-
-
 .login-form__buttons {
   width: 80%;
   margin-bottom: 38px;
@@ -86,12 +135,72 @@ p, a {
     border-radius: 5px;
     font-weight: 500;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .registration-link {
     font-weight: 500;
     font-size: 24px;
-    color: #2B2929;
   }
+}
+
+.chats-feed {
+  background: #fff;
+  width: 25%;
+  margin-top: 10px;
+  border-right: 1px solid;
+  height: 100%;
+  overflow: auto;
+}
+
+.chats-feed__list {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.header-bar {
+  margin-bottom: 10px;
+}
+
+.header-bar__profile {
+  margin: 14px;
+}
+
+.chats-feed__search-input {
+  width: 90%;
+  height: 45px;
+  margin: auto;
+  background: #EFEFEF;
+  border: none;
+  border-radius: 5px;
+}
+
+.chats-feed_hr {
+  width: 90%;
+}
+
+.splash-screen {
+  position: absolute;
+  margin: auto;
+  width: 30%;
+  top: 47%;
+  position: relative;
+  text-align: center;
+}
+
+.chat-right-column {
+  overflow: auto;
+  width: 100%;
+  margin: 0px 15px 5em 15px;
+}
+
+//--Chat feed
+
+.err-code {
+  font-size: 5em;
+}
+
+.err-message {
+  font-size: 1.4em;
 }
