@@ -19,6 +19,9 @@ https://www.figma.com/file/g01h4wah9RXNOx2JJa7AK5/Untitled?node-id=0%3A1
 ##  Репзиторий  Githab
 https://github.com/RusJafar/practica-chat.git
 
+## Ссылка на домен в NetLify
+https://shiny-baklava-9111fa.netlify.app/
+
 __Запуск__
 - Утановка `npm i`
 - Запуск в режиме дев `parcel src/static/index.html --open --no-cache`
